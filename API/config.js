@@ -1,0 +1,1 @@
+export const API_KEY = 'http://18.139.175.66/api/xdeal/sendpushnotif';

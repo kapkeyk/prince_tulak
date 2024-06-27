@@ -22,12 +22,13 @@ function App() {
       <div className="bg-black h-max">
         <div className="max-w-5xl mx-auto">
           <div className="flex justify-center items-center py-24">
-            <div className="card w-3/4 bg-custom-bg p-2">
+            <div className="card w-3/4 bg-custom-bg p-2 border border-gray-600">
               <div className="flex justify-center mt-4">
                 <img src={New_Xure_Logo} className="p-2 text-custom-dark text-center text-lg font-extrabold w-36 h-12 bg-custom-bg " />
               </div>
               <form onSubmit={handleSubmit} action="" className="card-body space-y-4">
                 <input
+                  required
                   type="text"
                   value={inputTitle}
                   onChange={(e) => setInputTitle(e.target.value)}
@@ -36,6 +37,7 @@ function App() {
                 />
 
                 <textarea
+                  required
                   value={inputContext}
                   onChange={(e) => setInputContext(e.target.value)}
                   className="textarea border-1 border-custom-gold h-48 w-full text-white text-base bg-custom-bg focus:border-2 focus:border-light-gold"
